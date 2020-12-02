@@ -30,6 +30,9 @@
                                 <rect key="frame" x="156.66666666666666" y="147" width="116.66666666666666" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Calculate"/>
+                                <connections>
+                                    <action selector="calculateClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BfL-0P-Q6L"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip:$0:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QU1-MO-VR5">
                                 <rect key="frame" x="142" y="271" width="146" height="113"/>
@@ -59,6 +62,11 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tSW-zm-Eax" secondAttribute="trailing" constant="18" id="zw6-md-qMY"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="billTotalTextField" destination="DWz-Fx-p04" id="7qc-tR-KFj"/>
+                        <outlet property="resultLabel" destination="QU1-MO-VR5" id="h1g-hN-dJV"/>
+                        <outlet property="tipPercentageTextField" destination="tSW-zm-Eax" id="Cug-4U-vPr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
